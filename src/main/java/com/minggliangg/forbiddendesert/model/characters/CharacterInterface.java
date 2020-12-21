@@ -1,4 +1,4 @@
-package com.minggliangg.forbiddendesert.model;
+package com.minggliangg.forbiddendesert.model.characters;
 
 import com.minggliangg.forbiddendesert.enums.CharacterTypes;
 

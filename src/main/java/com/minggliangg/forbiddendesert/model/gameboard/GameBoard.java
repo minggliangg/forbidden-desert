@@ -3,7 +3,7 @@ package com.minggliangg.forbiddendesert.model.gameboard;
 import com.minggliangg.forbiddendesert.enums.Direction;
 import com.minggliangg.forbiddendesert.enums.FlyingMachineParts;
 import com.minggliangg.forbiddendesert.enums.GearTileTypes;
-import com.minggliangg.forbiddendesert.model.CharacterInterface;
+import com.minggliangg.forbiddendesert.model.characters.CharacterInterface;
 
 import java.util.ArrayList;
 import java.util.Collections;

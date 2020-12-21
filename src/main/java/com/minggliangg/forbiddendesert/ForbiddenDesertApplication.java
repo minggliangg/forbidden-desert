@@ -1,13 +1,7 @@
 package com.minggliangg.forbiddendesert;
 
-import com.minggliangg.forbiddendesert.model.CharacterInterface;
-import com.minggliangg.forbiddendesert.model.Climber;
-import com.minggliangg.forbiddendesert.model.gameboard.GameBoard;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
-import java.util.List;
 
 @SpringBootApplication
 public class ForbiddenDesertApplication {

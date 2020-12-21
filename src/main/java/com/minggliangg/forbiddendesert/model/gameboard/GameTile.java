@@ -2,7 +2,7 @@ package com.minggliangg.forbiddendesert.model.gameboard;
 
 import com.minggliangg.forbiddendesert.enums.FlyingMachineParts;
 import com.minggliangg.forbiddendesert.enums.GameTileTypes;
-import com.minggliangg.forbiddendesert.model.CharacterInterface;
+import com.minggliangg.forbiddendesert.model.characters.CharacterInterface;
 import lombok.Getter;
 import lombok.Setter;
 

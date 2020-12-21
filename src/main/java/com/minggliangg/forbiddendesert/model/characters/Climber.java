@@ -1,10 +1,10 @@
-package com.minggliangg.forbiddendesert.model;
+package com.minggliangg.forbiddendesert.model.characters;
 
 import com.minggliangg.forbiddendesert.enums.CharacterTypes;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Meteorologist implements CharacterInterface {
+public class Climber implements CharacterInterface {
     @Getter
     private final String name;
     @Getter
@@ -13,10 +13,10 @@ public class Meteorologist implements CharacterInterface {
     @Setter
     private int waterLevel;
 
-    public Meteorologist(String name) {
+    public Climber(String name) {
         this.name = name;
-        characterType = CharacterTypes.meteorologist;
-        waterLevel = 4;
+        characterType = CharacterTypes.climber;
+        waterLevel = 3;
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Meteorologist implements CharacterInterface {
 
     @Override
     public String abilityDescription() {
-        return "The Meteorologist may spend actions to draw fewer Storm cards (1 card per action) at the end of her turn. She may also choose to spend 1 action to look at the top Storm cards, equal to the Storm level, and may place one at the bottom of the deck.";
+        return "The Climber can move to blocked tiles (tiles with 2 or more Sand markers on them). He may also take one other player with him whenever he moves. Pawns on the Climber’s tile are never buried and can leave the tile containing the Climber even if there are 2 or more Sand markers on it.";
     }
 
     @Override
@@ -34,5 +34,8 @@ public class Meteorologist implements CharacterInterface {
         waterLevel -= 1;
         return waterLevel < 0;
     }
+
+
+
 
 }

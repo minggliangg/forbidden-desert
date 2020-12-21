@@ -1,10 +1,10 @@
-package com.minggliangg.forbiddendesert.model;
+package com.minggliangg.forbiddendesert.model.characters;
 
 import com.minggliangg.forbiddendesert.enums.CharacterTypes;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Archeologist implements CharacterInterface {
+public class WaterCarrier implements CharacterInterface {
     @Getter
     private final String name;
     @Getter
@@ -13,10 +13,10 @@ public class Archeologist implements CharacterInterface {
     @Setter
     private int waterLevel;
 
-    public Archeologist(String name) {
+    public WaterCarrier(String name) {
         this.name = name;
-        characterType = CharacterTypes.archeologist;
-        waterLevel = 3;
+        characterType = CharacterTypes.waterCarrier;
+        waterLevel = 5;
     }
 
     @Override
@@ -26,7 +26,7 @@ public class Archeologist implements CharacterInterface {
 
     @Override
     public String abilityDescription() {
-        return "The Archeologist can remove 2 Sand markers from any single tile for 1 action.";
+        return "The Water Carrier can take 2 water from already excavated wells for 1 action. She may also give water to players on adjacent tiles for free at any time. The Water Carrier also starts with 5 (instead of 4) water.";
     }
 
     @Override

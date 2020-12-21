@@ -1,10 +1,10 @@
-package com.minggliangg.forbiddendesert.model;
+package com.minggliangg.forbiddendesert.model.characters;
 
 import com.minggliangg.forbiddendesert.enums.CharacterTypes;
 import lombok.Getter;
 import lombok.Setter;
 
-public class Explorer implements CharacterInterface {
+public class Navigator implements CharacterInterface {
     @Getter
     private final String name;
     @Getter
@@ -13,9 +13,9 @@ public class Explorer implements CharacterInterface {
     @Setter
     private int waterLevel;
 
-    public Explorer(String name) {
+    public Navigator(String name) {
         this.name = name;
-        characterType = CharacterTypes.explorer;
+        characterType = CharacterTypes.navigator;
         waterLevel = 4;
     }
 
@@ -26,8 +26,8 @@ public class Explorer implements CharacterInterface {
 
     @Override
     public String abilityDescription() {
-        return "The Explorer can move, remove sand, and may use Dune Blasters diagonally.";
-    }
+        return "The Navigator may move another player up to 3 unblocked tiles per action, including tunnels.\n" +
+                "She can move the Explorer diagonally and can move the Climber through blocked tiles. When moved in this way, the Climber can also use his power to take along 1 other player—including the Navigator!";}
 
     @Override
     public boolean sunBeatsDown() {

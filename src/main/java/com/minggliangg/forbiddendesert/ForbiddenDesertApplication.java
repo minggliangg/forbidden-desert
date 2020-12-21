@@ -1,27 +1,28 @@
 package com.minggliangg.forbiddendesert;
 
-
-import com.minggliangg.forbiddendesert.model.Archeologist;
 import com.minggliangg.forbiddendesert.model.CharacterInterface;
 import com.minggliangg.forbiddendesert.model.Climber;
-import com.minggliangg.forbiddendesert.model.Game;
+import com.minggliangg.forbiddendesert.model.gameboard.GameBoard;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+import java.util.ArrayList;
+import java.util.List;
 
 @SpringBootApplication
 public class ForbiddenDesertApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ForbiddenDesertApplication.class, args);
-        Game myGame = new Game();
-        CharacterInterface myCharacter1 = new Archeologist("James");
-        CharacterInterface myCharacter2 = new Climber("John");
-        myGame.addPlayer(myCharacter1);
-        myGame.addPlayer(myCharacter2);
-        myGame.sunBeatsDown();
-        myGame.status();
 
-
-
+        // Sample code to test board layout
+        // CharacterInterface myCharacter = new Climber("James");
+        // List<CharacterInterface> characters = new ArrayList<>();
+        // characters.add(myCharacter);
+        // GameBoard gameBoard = new GameBoard();
+        // gameBoard.setUp(characters);
+        // gameBoard.layout();
+        // myCharacter.sunBeatsDown();
+//         System.out.println("End");
     }
 }

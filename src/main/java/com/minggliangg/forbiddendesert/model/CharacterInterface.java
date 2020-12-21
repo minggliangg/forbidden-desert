@@ -1,6 +1,6 @@
 package com.minggliangg.forbiddendesert.model;
 
-import com.minggliangg.forbiddendesert.CharacterTypes;
+import com.minggliangg.forbiddendesert.enums.CharacterTypes;
 
 public interface CharacterInterface {
     String getName();

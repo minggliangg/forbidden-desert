@@ -1,4 +1,4 @@
-package com.minggliangg.forbiddendesert;
+package com.minggliangg.forbiddendesert.enums;
 
 public enum CharacterTypes {
     archeologist("Archeologist"), climber("Climber"), explorer("Explorer"),

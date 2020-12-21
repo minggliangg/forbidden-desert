@@ -1,6 +1,6 @@
 package com.minggliangg.forbiddendesert.model;
 
-import com.minggliangg.forbiddendesert.CharacterTypes;
+import com.minggliangg.forbiddendesert.enums.CharacterTypes;
 import lombok.Getter;
 import lombok.Setter;
 
